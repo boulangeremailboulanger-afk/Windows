@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Redirection avec notification</title>
+<script>
+  // Ton vrai lien ici
+  const destination = "https://google.com";
+
+  window.onload = function () {
+    // Affiche une popup d'alerte
+    alert("Vous allez être redirigé vers une page sécurisée...");
+
+    // Ensuite redirection (après 1 seconde pour laisser respirer)
+    setTimeout(() => {
+      window.location.replace(destination);
+    }, 1000);
+  };
+</script>
+</head>
+<body>
+</body>
+</html>
